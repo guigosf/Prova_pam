@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Entry
+                x:Name="CepEntry2"
+                Placeholder="Digite aqui o Cep"
+                Keyboard="Numeric"
+                WidthRequest="350"/>
+
+            <HorizontalStackLayout>
+            <Label
+              Text="Cep:" VerticalTextAlignment="Center"/>
+
+            <Entry
+              x:Name="CepEntry"
+              Placeholder="Cep"
+              Keyboard="Numeric"
+              IsEnabled="False"
+                />
+                </HorizontalStackLayout>
+                
+
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a submarine number ten" />
+
+                <HorizontalStackLayout>
+                    <Label
+              Text="Cidade: " VerticalTextAlignment="Center"/>
+
+                    <Entry
+              x:Name="CidadeEntry"
+              Placeholder="Cidade"
+              Keyboard="Text"
+              IsEnabled="False"
+                />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label
+              Text="Rua: " VerticalTextAlignment="Center"/>
+
+                    <Entry
+              x:Name="RuaEntry"
+              Placeholder="Rua"
+              Keyboard="Text"
+              IsEnabled="False"
+                />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label
+              Text="Bairro: " VerticalTextAlignment="Center"/>
+
+                    <Entry
+              x:Name="BairroEntry"
+              Placeholder="Bairro"
+              Keyboard="Text"
+              IsEnabled="False"
+                />
+                </HorizontalStackLayout>
+            
+                <Button
+                x:Name="BuscarBotao"
+                Text="Buscar" 
+                SemanticProperties.Hint="Buscar um cep"
+                Clicked="BuscarBotao_Clicked"
+                HorizontalOptions="Fill"
+                WidthRequest="150"
+                HeightRequest="50"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
